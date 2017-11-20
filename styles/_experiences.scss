@@ -1,0 +1,190 @@
+@import 'typography';
+
+.exWrap {
+	max-width: 1000px;
+	margin: auto;
+	margin-bottom: 100px;
+	ul li {
+		font-family: $copy;
+		color: $secondaryColor;
+		font-weight: 300;
+		font-size: 1.6rem;
+		margin-bottom: 10px;
+	}
+	a {
+		&:hover {
+			transition: all 0.1s;
+			color: $primaryColor;
+		&:focus {
+			@extend .trans;
+			outline: none;
+			box-shadow: 0 2px 0 0 $primaryColor;
+			}
+		}
+	}
+	h2 {
+		margin-top: 180px;
+		margin-bottom: 30px;
+	}
+}
+
+ul.exList1 {
+	width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+}
+
+ul li a:hover, ul li a:active {
+	border-bottom: none;
+}
+
+/// ACCORDION
+
+button.accordion {
+	display: inline-block;
+    background-color: white;
+    color: $primaryColor;
+    cursor: hand;
+    padding: 18px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid $primaryColor;
+    outline: none;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: $primaryColor;
+    color: white;
+    border: 1px solid $primaryColor;
+}
+
+button.accordion:focus {
+	@extend .trans;
+	box-shadow: 0 2px 0 0 $primaryColor;
+	outline: none;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: $primaryColor;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+
+// pseudo-element comes after the pseudo-class
+button.accordion:hover:after {
+	color: white;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+    color: white;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 50px;
+    transition: max-height 0.2s ease-out;
+    p {
+    	padding-right: 30px;
+    	margin: 0 ;
+		margin-bottom: 2%;
+    }
+}
+
+.panel img {
+	width: 25%;
+	min-width: 25%;
+	margin-top: 10px;
+	margin-right: 30px;
+	float: left;
+}
+
+.bookNow a {
+	@extend .trans;
+		text-transform: uppercase;
+		background: transparent;
+		display: inline-block;
+		padding: 15px 20px;
+		width: 215px;
+		border: 1px solid $primaryColor;
+		margin-right: 20px;
+		margin-top: 10px;
+		text-align: center;
+		&:hover {
+			border: 1px solid $primaryColor;
+			background: $primaryColor;
+			color: white;
+			outline: none;
+		}
+		&:focus {
+			@extend .trans;
+			outline: none;
+			box-shadow: 0 2px 0 0 $primaryColor;
+		}
+}
+
+// MEDIA QUERIES //
+
+@media (max-width: 1050px) {
+	.exWrap h2 {
+		margin-top: 50px;
+		margin-left: 20px;
+	}
+
+	.ex {
+		margin: 0 20px;
+	}
+}
+
+@media (max-width: 788px) {
+	.panel img {
+		width: 174.5px;
+		margin-bottom: 100px;
+	}
+	.panel p{
+		margin-bottom: 100px;
+	}
+}
+
+@media (max-width: 779px) {
+	div.panel p {
+		margin-bottom: 13px;
+	}
+}
+
+
+@media (max-width: 549px) {
+	.bookNow {
+		margin-bottom: 50px;
+	}
+
+}
+
+@media (max-width: 518px) {
+	.panel img {
+		display: none;
+	}
+}
+
+@media (max-width: 415px) {
+	.ex {
+		@include flex(column);
+	.exList1, .exList2 {
+		width: 100%;
+			li {
+				line-height: 30px;
+			}
+		}
+	}
+	.exWrap {
+		margin-top: 100px;
+	}
+}	

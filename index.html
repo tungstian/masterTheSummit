@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Master the Summit</title>
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:300|Roboto:100,300" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
+	<link rel="stylesheet" href="styles/style.css"/>
+	<!-- THANKS TIFF, PETER, JEN & AMIE -->
+</head>
+
+<body>
+	<!-- HEADER  -->
+	<header class="headerWrap">
+
+		<div id="home">
+			<h1>Master<br>the summit</h1>
+			<p>A website for an imaginary tour company</p>
+
+			<ul class="buttons flex">
+				<li><a href="#about">Learn more</a></li>
+				<li><a href="#book">Book now</a></li>
+			</ul>
+		</div>
+	</header>
+
+	<!-- ABOUT US -->
+	<section class="aboutWrap">
+		<div class="about clearfix" id="about">
+			<div class="aboutImg">
+				<img src="images/aboutImg2.jpg" alt="Snowy mountain in Lauterbrunnen, Switzerland">
+			</div>
+			<div class="aboutWords">
+				<h2>About us</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius numquam harum amet voluptas sint magni cupiditate, nemo laboriosam culpa labore libero esse nobis, nihil autem laudantium, dolor. Lorem ipsum dolor sit amet.</p>
+			</div>
+		</div>
+		<div class="carousel" data-flickity='{ "setGallerySize": false }'>
+			<div class="carousel-cell"><img src="images/gallery/albert-cornelissen-143095.jpg" alt=""></div>
+			<div class="carousel-cell"><img src="images/gallery/anton-tevajarvi-184508.jpg" alt=""></div>
+			<div class="carousel-cell"><img src="images/gallery/erik-sandybaev-42878.jpg" alt=""></div>
+			<div class="carousel-cell"><img src="images/gallery/ian-keefe-217258.jpg" alt=""></div>
+			<div class="carousel-cell"><img src="images/gallery/matthew-kane-205770.jpg" alt=""></div>
+		</div>
+	</section>
+
+	<!-- EXPERIENCES -->
+	<main class="exWrap" id="experiences">
+		<h2>Experiences</h2>
+		<div class="ex flex">
+			<ul class="exList1">
+				<li>
+					<button class="accordion">Austria</button>
+					<div class="panel">
+						<img src="images/austria.jpg" alt="Austria Alps">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class="bookNow"><a href="#book">Book now</a></div>
+					</div>
+				</li>
+
+				<li>
+					<button class="accordion">Canada</button>
+					<div class="panel">
+						<img src="images/canada.jpg" alt="Mountains in Canada">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class="bookNow">
+							<a href="#book">Book now</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<button class="accordion">France</button>
+					<div class="panel">
+						<img src="images/france.jpg" alt="French Alps">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class="bookNow">
+							<a href="#book">Book now</a>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<button class="accordion">Germany</button>
+					<div class="panel">
+						<img src="images/germany.jpg" alt="German Alps">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+						<div class="bookNow">
+							<a href="#book">Book now</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</main>
+
+	<!-- DECORATIVE IMAGE -->
+	<div class="decImgs"></div>
+
+	<!-- REQUIREMENTS -->
+	<section class="reqWrap" id="requirements">
+		<div class="lowerImg">
+			<img src="images/lowerImg.jpg" alt="">
+		</div>
+		<div class="reqWordsWrap">
+			<img src="images/midPage-square.jpg" class="squareImg" alt="">
+			<div class="reqWords">
+				<h2>Requirements</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab cum, possimus expedita, dolorem fugit minima, eius voluptas sequi quasi quisquam ipsa incidunt asperiores ipsum qui consequatur sapiente! Quas beatae vitae placeat itaque odit expedita sint vel! Et, veritatis eos natus vero rerum quaerat sequi, corporis placeat recusandae accusantium, omnis?</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, alias natus qui nulla, quam animi ex voluptates molestias atque aliquam debitis dolorum harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio delectus ratione, aliquam.</p>
+			</div>
+		</div>
+	</section>
+
+	<!-- BOOKING FORM -->
+	<section class="bcWrap">
+		<div class="bookWrap" id="book">
+			<h2>Book your trip</h2>
+			<div class="form-container">
+				<div class="formFlex clearfix">
+					<form action="POST">
+							<div class="margin inputWrap">
+								<input type="date" name="start">
+								<label for="start">Start date</label>
+							</div>
+							
+							<div class="inputWrap">
+								<input type="date">
+								<label for="end">End date</label>
+							</div>
+
+							<div class="margin inputWrap">
+								<input type="text" name="firstName" class="firstName" placeholder="First name">
+								<label for="firstName">First name</label>
+							</div>
+							
+							<div class="inputWrap">
+								<input type="text" name="lastName" class="lastName" placeholder="Last name">
+								<label for="last">Last name</label>
+							</div>
+							
+							<div class="margin inputWrap">
+								<input type="number" name="headCount" class="headCount" value="1" min="1" max="20">
+								<label for="headCount">Adult(s)</label>
+							</div>
+							
+							<div class="inputWrap">
+								<div class="selectWrap">
+									<select name="destination" id= "destination" class="style no-radius">
+									<option value="Austria">Austria</option>
+									<option value="Canada">Canada</option>
+									<option value="France">France</option>
+									<option value="Germany">Germany</option>
+									</select>
+								</div>
+								<div>
+									<label for="destination">Choose your destination</label>
+								</div>
+							</div>
+					
+							<div class="inputWrap">
+								<input name="email" id="email" type="email" placeholder="Enter your e-mail address"/> 
+								<label for="email">E-mail address</label>
+							</div>
+
+							<div class="buttonWrap">
+								<button type="reset" value="reset">reset</button>
+								<button class="submit" value="submit">Submit</button>
+							</div>
+
+					<section class="popup">
+						<p></p>
+						<button class="close">Close</button>
+					</section>
+				</form>
+			</div>
+		</div>
+	</section>
+		
+
+		<div class="decLine"></div>
+	</section>
+
+<!-- FOOTER -->
+	<footer class="footWrap">
+		<div class="conWrap" id="contact">
+			<h2>Contact us</h2>
+			<p><a href="mailto:hello@alpineexpeditions.com">hello@masterthesummit.com</a></p>
+			<p>123 Imaginary Street<br>Imaginary Land, IL<br>M7S R0K</p>
+			<p><a href="tel:3346654910">334.665.4910</a></p>
+			<ul class="socialIcons">
+				<li>
+					<a href="https://www.facebook.com/" target="_blank">
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<span class="visuallyHidden">Facebook</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/" target="_blank">
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<span class="visuallyHidden">Twitter</span>
+					</a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/" target="_blank">
+						<i class="fa fa-youtube-play" aria-hidden="true"></i>
+						<span class="visuallyHidden">YouTube</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="bottomWords">
+			<p><span>//</span>Layout based on <a href="https://www.behance.net/gallery/25135147/MOUNTAINS-FREE-PSD" target="_blank">Mountains 2</a> by Dmitry Kuzmenkov</p>
+		</div>
+	</footer>
+
+<!-- jQUERY CDNs -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+<!-- PAGE SCRIPTS -->
+<script src="scripts/_main.js"></script>
+<script src="scripts/accordion.js"></script>
+<script src="scripts/submitButton.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+@mixin flex($direction) {
+	display: flex;
+	flex-direction: $direction;
+	flex-wrap: no-wrap;
+}
+
+.about {
+	@include flex(row);
+}
+
+.aboutWrap {
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 200px;
+	margin-bottom: 100px;
+}
+
+.aboutWords {
+	margin-top: 30px;
+	margin-bottom: 20px;
+	margin-left: 500px;
+	width: 50%;
+}
+
+.aboutImg {
+	position: absolute;
+	img {
+		width: 450px;
+	}
+}
+
+//Flickity 
+
+.flickity-page-dots { 
+	bottom: 30px; 
+}
+
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+  background: white;
+}
+
+/* big buttons, no circle */
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* hide disabled button */
+.flickity-prev-next-button:disabled {
+  display: none;
+}
+
+.flickity-prev-next-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px white;
+}
+
+.carousel {
+	height: 350px;
+	width: 700px;
+	position: relative;
+	top: -20%;
+	left: 30%;
+}
+
+/* cell inherit height from carousel */
+.carousel-cell {
+  height: 100%;
+}
+
+.carousel-cell img {
+	height: 113%;
+}
+
+// MEDIA QUERIES //
+
+@media (max-width: 1050px) {
+	.aboutWords {
+		margin:0;
+		width: 100%;
+		margin-bottom: 40px;
+		margin-right: 20px;
+		margin-left: 20px;
+		h2 {
+			margin-left: 0;
+		}
+	}
+
+	.aboutWrap {
+		padding-bottom: 0;
+	}
+
+	.aboutImg {
+		display: none;
+	}	
+
+	.carousel {
+		width: 100%;
+		height: 500px;
+		left: 0;
+	}
+}
+
+@media (max-width: 414px) {
+	.aboutWrap {
+		margin-bottom:100px;
+	}
+	.carousel {
+		width: 100%;
+		height: 300px;
+		left: 0;
+	}
+}

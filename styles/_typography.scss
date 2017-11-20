@@ -1,0 +1,114 @@
+//
+$heading: 'Rajdhani', sans-serif;
+$copy: 'Roboto', sans-serif;
+$primaryColor: #333; 					// headings, button hovers
+$secondaryColor: #666;					// body copy, links
+//
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-weight: normal;
+}
+
+h1, h2, a {
+	text-transform: uppercase;
+	color: $primaryColor;
+}
+
+h1, h2, ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2 {
+	font-family: $heading;
+	color: $primaryColor;
+	font-weight: normal;
+}
+
+h2 {
+	font-size: 6.4rem;	
+	letter-spacing: -2px;
+}
+
+p, a {
+	font-family: $copy;
+	color: $secondaryColor;
+	font-weight: 300;
+	font-size: 1.6rem;
+}
+
+p {
+	line-height: 2.75rem;	
+	letter-spacing: .04rem;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#home {
+	h1 {
+		font-size: 9rem;		
+		line-height: 8rem;		
+		position: relative;
+		margin-bottom: 3.2rem;	
+		letter-spacing: -2px;	
+		color: $primaryColor;
+	}
+	p {
+		font-size: 2rem;		
+		color: $secondaryColor;
+		margin-bottom: 3.6rem;	
+		letter-spacing: .5px;	
+	}
+}
+
+ul.buttons {
+	li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: inline;
+			a {
+			color: $primaryColor;
+		}
+	}
+}
+
+// MEDIA QUERIES //
+
+@media (max-width: 414px) {
+	h1 {
+		font-size: 7rem;
+	}
+	h2 {
+		font-size: 5.4rem;	
+	}
+}
+
+@media (max-width: 375px) {
+	h1 {
+		font-size: 6rem;
+		line-height: 6rem;
+	}
+	h2 {
+		font-size: 4rem;	
+	}
+}
+
+@media (max-width: 330px) {
+	h1 {
+		font-size: 7rem;
+		line-height: 7rem;
+	}
+}

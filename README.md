@@ -1,2 +1,2 @@
 # Master the Summit
-<p> A site developed for a fictional tour company.
+<p> A fully responsive site developed for a fictional tour company.
